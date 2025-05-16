@@ -1,4 +1,5 @@
 const authService = require('../services/authService');
+const bcrypt = require('bcrypt');
 
 async function register(req, res) {
   try {
@@ -6,12 +7,11 @@ async function register(req, res) {
     if (!name || !email || !password) {
       return res.status(400).json({ error: 'All fields are required' });
     }
-    // const userExists = await prisma.user.findUnique({ where: { email } });
     const userExists = await authService.findUserByEmail(email);
     if (userExists) {
       return res.status(400).json({ error: 'User already exists' });
     }
-    // await prisma.user.create({ data: { name, email, password } });
+
     await authService.createUser({name, email, password});
     res.status(201).send('User registered successfully!');
   } catch (err) {
@@ -26,12 +26,18 @@ async function login(req, res) {
     if (!email || !password) {
       return res.status(400).json({ error: 'Email and password are required' });
     }
-    // const user = await prisma.user.findUnique({ where: { email } });
+
     const user = await authService.findUserByEmail(email);
     if (!user) {
       return res.status(404).json({ error: 'User not found' });
     }
-    if (user.password === password) {
+
+    const isPasswordCorrect = await bcrypt.compare(password, user.password);
+    console.log("Password provided:", password);
+    console.log("Password in DB:", user.password);
+    console.log("Result of compare:", isPasswordCorrect);
+
+    if (isPasswordCorrect) {
       return res.status(200).json({ message: 'Login successful' });
     } else {
       return res.status(400).json({ error: 'Incorrect password' });
