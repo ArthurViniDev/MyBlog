@@ -4,48 +4,60 @@ const prisma = new PrismaClient();
 const router = express.Router();
 
 router.post('/register', async (req, res) => {
-  const name = req.body.name;
-  const email = req.body.email;
-  const password = req.body.password;
+  try {
+    const { name, email, password } = req.body;
 
-  // const userExists = users.find(user => user.email === email);
-  const userExists = await prisma.user.findUnique({
-    where: { email: email }
-  })
-  if (userExists) {
-    return res.status(400).json({
-      error: 'User already exists in the database!'
-    });
+    if (!name || !email || !password) {
+      return res.status(400).json({ error: 'All fields are required' });
+    }
+
+    const userExists = await prisma.user.findUnique({
+      where: { email: email }
+    })
+    if (userExists) {
+      return res.status(400).json({
+        error: 'User already exists in the database!'
+      });
+    }
+
+    await prisma.user.create({
+      data: {
+        name,
+        email,
+        password,
+      },
+    })
+    res.status(201).send('User successfully registered!');
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: 'Server error' });
   }
-
-  await prisma.user.create({
-    data: {
-      name,
-      email,
-      password,
-    },
-  })
-  res.status(201).send('Usuário registrado com sucesso!');
 })
 
 router.post('/login', async (req, res) => {
-  const email = req.body.email;
-  const password = req.body.password;
-  const user = await prisma.user.findUnique({
-    where: { email: email }
-  })
-  if (!user) {
-    return res.status(404).json({ error: 'User not exist'})
+  try {
+    const { email, password } = req.body;
+    if (!email || !password) {
+      return res.status(400).json({ error: 'Email and password are required' });
+    }
+
+    const user = await prisma.user.findUnique({
+      where: { email: email }
+    });
+
+    if (!user) {
+      return res.status(404).json({ error: 'User does not exist' });
+    }
+
+    if (user.password === password) {
+      return res.status(200).json({ message: 'Login successful' });
+    } else {
+      return res.status(400).json({ error: 'Incorrect password' });
+    }
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: 'Server error' });
   }
-  if(user.password === password) {
-    return res.status(200).json({
-      success: 'User login successfully!'
-    })
-  }else{
-    return res.status(400).json({
-      error: 'Incorrect password!'
-    })
-  }
-})
+});
 
 module.exports = router;
