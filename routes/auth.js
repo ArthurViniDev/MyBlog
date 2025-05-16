@@ -21,11 +21,7 @@ router.post('/register', async (req, res) => {
     }
 
     await prisma.user.create({
-      data: {
-        name,
-        email,
-        password,
-      },
+      data: { name, email, password, },
     })
     res.status(201).send('User successfully registered!');
   } catch (err) {
