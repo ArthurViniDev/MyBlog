@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="99c07afc-b87e-44d1-bf82-2fa3d61dc408" name="Changes" comment="creating database">
-      <change afterPath="$PROJECT_DIR$/controllers/authController.js" afterDir="false" />
+    <list default="true" id="99c07afc-b87e-44d1-bf82-2fa3d61dc408" name="Changes" comment="separate auth logic into controller for better project structure">
+      <change afterPath="$PROJECT_DIR$/services/authService.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/authController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/authController.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +24,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "ArthurViniDev"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/ArthurViniDev/MyBlog.git",
+    "accountId": "e9148580-52b8-4a04-acbd-5d6652783e24"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -70,6 +82,7 @@
       <updated>1747343360887</updated>
       <workItem from="1747343361934" duration="664000" />
       <workItem from="1747344127684" duration="10994000" />
+      <workItem from="1747425554868" duration="812000" />
     </task>
     <task id="LOCAL-00001" summary="creating database">
       <option name="closed" value="true" />
@@ -79,7 +92,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747357697558</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="separate auth logic into controller for better project structure">
+      <option name="closed" value="true" />
+      <created>1747360631660</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1747360631660</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -98,6 +119,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="creating database" />
-    <option name="LAST_COMMIT_MESSAGE" value="creating database" />
+    <MESSAGE value="separate auth logic into controller for better project structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="separate auth logic into controller for better project structure" />
   </component>
 </project>
