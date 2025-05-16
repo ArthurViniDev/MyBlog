@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="99c07afc-b87e-44d1-bf82-2fa3d61dc408" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/MyBlog.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/auth.js" afterDir="false" />
-    </list>
+    <list default="true" id="99c07afc-b87e-44d1-bf82-2fa3d61dc408" name="Changes" comment="creating database" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -72,11 +65,24 @@
       <option name="presentableId" value="Default" />
       <updated>1747343360887</updated>
       <workItem from="1747343361934" duration="664000" />
-      <workItem from="1747344127684" duration="9354000" />
+      <workItem from="1747344127684" duration="9657000" />
     </task>
+    <task id="LOCAL-00001" summary="creating database">
+      <option name="closed" value="true" />
+      <created>1747357697557</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1747357697558</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="creating database" />
+    <option name="LAST_COMMIT_MESSAGE" value="creating database" />
   </component>
 </project>
