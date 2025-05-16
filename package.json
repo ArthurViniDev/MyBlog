@@ -1,0 +1,14 @@
+{
+  "name": "MyBlog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "private": true,
+  "dependencies": {
+    "@prisma/client": "^6.8.1",
+    "express": "^5.1.0"
+  }
+}
