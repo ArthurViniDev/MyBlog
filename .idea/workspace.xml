@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="99c07afc-b87e-44d1-bf82-2fa3d61dc408" name="Changes" comment="creating database" />
+    <list default="true" id="99c07afc-b87e-44d1-bf82-2fa3d61dc408" name="Changes" comment="creating database">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,7 +47,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.sourceCode.JavaScript",
+    "settings.editor.selected.configurable": "project.propVCSSupport.Mappings",
     "ts.external.directory.path": "D:\\WebStorm 2025.1.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
@@ -65,7 +67,7 @@
       <option name="presentableId" value="Default" />
       <updated>1747343360887</updated>
       <workItem from="1747343361934" duration="664000" />
-      <workItem from="1747344127684" duration="9657000" />
+      <workItem from="1747344127684" duration="10400000" />
     </task>
     <task id="LOCAL-00001" summary="creating database">
       <option name="closed" value="true" />
@@ -80,6 +82,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="creating database" />
