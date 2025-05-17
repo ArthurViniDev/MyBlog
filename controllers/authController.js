@@ -33,9 +33,6 @@ async function login(req, res) {
     }
 
     const isPasswordCorrect = await bcrypt.compare(password, user.password);
-    console.log("Password provided:", password);
-    console.log("Password in DB:", user.password);
-    console.log("Result of compare:", isPasswordCorrect);
 
     if (isPasswordCorrect) {
       return res.status(200).json({ message: 'Login successful' });
