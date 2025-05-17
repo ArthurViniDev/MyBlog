@@ -4,9 +4,6 @@ const bcrypt = require('bcrypt');
 async function register(req, res) {
   try {
     const { name, email, password } = req.body;
-    if (!name || !email || !password) {
-      return res.status(400).json({ error: 'All fields are required' });
-    }
     const userExists = await authService.findUserByEmail(email);
     if (userExists) {
       return res.status(400).json({ error: 'User already exists' });
