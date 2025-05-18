@@ -4,8 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="99c07afc-b87e-44d1-bf82-2fa3d61dc408" name="Changes" comment="validate login middleware">
+    <list default="true" id="99c07afc-b87e-44d1-bf82-2fa3d61dc408" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/middlewares/authMiddleware.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/authController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/authController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/middlewares/validateLogin.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/validateLogin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/auth.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +90,8 @@
       <workItem from="1747507083907" duration="1706000" />
       <workItem from="1747519441550" duration="5553000" />
       <workItem from="1747593438294" duration="766000" />
+      <workItem from="1747603018896" duration="1313000" />
+      <workItem from="1747607199265" duration="851000" />
     </task>
     <task id="LOCAL-00001" summary="creating database">
       <option name="closed" value="true" />
