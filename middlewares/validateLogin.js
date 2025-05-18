@@ -8,4 +8,4 @@ function loginMiddleware(req, res, next) {
   next();
 }
 
-module.exports = router;
+module.exports = loginMiddleware();

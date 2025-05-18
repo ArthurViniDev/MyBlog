@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="99c07afc-b87e-44d1-bf82-2fa3d61dc408" name="Changes" comment="separate auth logic into controller for better project structure">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middlewares/validateLoing.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/validateLogin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/auth.js" afterDir="false" />
+    <list default="true" id="99c07afc-b87e-44d1-bf82-2fa3d61dc408" name="Changes" comment="validate login middleware">
+      <change beforePath="$PROJECT_DIR$/middlewares/validateLogin.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/validateLogin.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +83,7 @@
       <workItem from="1747425554868" duration="3301000" />
       <workItem from="1747507083907" duration="1706000" />
       <workItem from="1747519441550" duration="5553000" />
-      <workItem from="1747593438294" duration="618000" />
+      <workItem from="1747593438294" duration="766000" />
     </task>
     <task id="LOCAL-00001" summary="creating database">
       <option name="closed" value="true" />
@@ -103,7 +101,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747360631660</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="validate login middleware">
+      <option name="closed" value="true" />
+      <created>1747594181257</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1747594181257</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,6 +129,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="creating database" />
     <MESSAGE value="separate auth logic into controller for better project structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="separate auth logic into controller for better project structure" />
+    <MESSAGE value="validate login middleware" />
+    <option name="LAST_COMMIT_MESSAGE" value="validate login middleware" />
   </component>
 </project>
