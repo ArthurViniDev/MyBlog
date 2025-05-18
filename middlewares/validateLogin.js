@@ -1,3 +1,5 @@
+const router = require("../routes/auth");
+
 function loginMiddleware(req, res, next) {
   const { email, password } = req.body;
   if (!email || !password) {
@@ -5,3 +7,5 @@ function loginMiddleware(req, res, next) {
   }
   next();
 }
+
+module.exports = router;
