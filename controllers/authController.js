@@ -12,7 +12,7 @@ async function register(req, res) {
     if (userExists) {
       return res.status(400).json({ error: 'User already exists' });
     }
-    await authService.createUser({name, email, password});
+    await authService.createUser({name, email, password, role: 'user'});
 
     res.status(201).send('User registered successfully!');
 
@@ -35,12 +35,12 @@ async function login(req, res) {
     }
 
     const isPasswordCorrect = await bcrypt.compare(password, user.password);
-    
+
     if (!isPasswordCorrect) {
       return res.status(400).json({ error: 'Incorrect password' });
     }
 
-    const token = jwt.sign({ email: user.email }, secret, { expiresIn: '1h' });
+    const token = jwt.sign({ email: user.email, role: user.role }, secret, { expiresIn: '1h' });
 
     return res.status(200).json({ message: 'Login successful', token });
 
